@@ -10,3 +10,4 @@ POST /api/items: Создает новый предмет на основе да
 PUT /api/items/int:item_id: Обновляет информацию о предмете с указанным идентификатором на основе данных, предоставленных в теле запроса в формате JSON.
 
 DELETE /api/items/int:item_id: Удаляет предмет с указанным идентификатором.
+ссылка на коллекцию(https://api.postman.com/collections/24872610-f5f04507-9c1f-4a73-843e-62bf653a7f82?access_key=PMAT-01HKYVRW52E9F83CS31YGS72X7)
