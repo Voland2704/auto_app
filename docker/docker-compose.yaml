@@ -1,11 +1,10 @@
-version: '3'
+version: '3.8'
 services:
   web:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-    environment:
-      - BRANCH=dev   # Specify the branch you want to deploy
-      - PORT=5000    # Specify the host port
+    build: .
     ports:
-      - "${PORT}:5000"
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      - Branch=development
