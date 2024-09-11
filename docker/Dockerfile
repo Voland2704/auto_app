@@ -2,11 +2,11 @@ FROM python:3.11
 
 WORKDIR /app
 
-COPY ../requirements.txt .
+COPY docker/req.txt /app
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r req.txt
 
-COPY ../src .
+COPY ./src   .
 
 EXPOSE 5000
 
